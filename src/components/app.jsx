@@ -1,12 +1,15 @@
 import React from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
+import Closet from './Closet';
+import Header from './Header';
 
-function  App (){
+function App (){
 
     return (
       <div>
-        app works
+        <Header/>
         <Switch>
+          <Route exact path='/' render={Closet}/>
         </Switch>
       </div>
     );
