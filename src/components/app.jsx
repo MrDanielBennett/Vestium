@@ -7,11 +7,9 @@ function  App (){
       <div>
         app works
         <Switch>
-          <Game/>
         </Switch>
       </div>
     );
   }
-}
 
 export default App
