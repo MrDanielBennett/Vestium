@@ -1,17 +1,32 @@
 import React from 'react'
 
 function NewItemForm(){
+  let _name = null;
+  let _type = null;
+  let _color = null;
+
+  function handleNewItemFormSubmission(event){
+    event.preventDefault();
+    console.log(_name.value);
+    console.log(_type.value);
+    console.log(_color.value);
+    _name.value = '';
+    _type.value = '';
+    _color.value = '';
+  }
+
   return(
     <div>
-      <form>
+      <form onSubmit={handleNewItemFormSubmission}>
         <input
           type='text'
           id='name'
-          placeholder='Name of Clothing Item'/>
+          placeholder='Name of Clothing Item'
+          ref={(input) => {_name = input;}} />
         <br/>
         <label>
           What type of Clothing is the item?
-        <select>
+        <select ref={(input) => {_type = input}}>
             <option value="shirt">Shirt</option>
             <option value="pants">Pants</option>
           </select>
@@ -19,7 +34,7 @@ function NewItemForm(){
         <br/>
         <label>
           What Color is the item?
-        <select>
+        <select ref={(input) => {_color = input}}>
             <option value="red">Red</option>
             <option value="yellow">Yellow</option>
             <option value="white">White</option>
