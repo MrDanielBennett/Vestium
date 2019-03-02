@@ -11,8 +11,6 @@ function NewItemForm(){
     console.log(_type.value);
     console.log(_color.value);
     _name.value = '';
-    _type.value = '';
-    _color.value = '';
   }
 
   return(

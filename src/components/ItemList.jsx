@@ -38,10 +38,6 @@ function ItemList (){
             key={index}/>
         )}
       </div>
-      <Item
-        name="Red T-Shirt"
-        type='shirt'
-        color='red'/>
     </div>
   );
 }
