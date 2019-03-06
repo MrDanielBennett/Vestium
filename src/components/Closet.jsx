@@ -7,7 +7,7 @@ import './../../styles.css';
 import { Link } from 'react-router-dom';
 
 
-function Home (){
+function Closet (){
   return (
     <div className="test">
       <h3>This is the body</h3>
@@ -25,4 +25,4 @@ function Home (){
   );
 }
 
-export default Home;
+export default Closet;
