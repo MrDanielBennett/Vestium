@@ -1,45 +1,28 @@
 import React from 'react';
 import Item from './Item';
+import PropTypes from 'prop-types';
 
-function ItemList (){
-
-  let masterItemList = [
-    {
-      name: 'Red T-shirt',
-      type: 'shirt',
-      color: 'red'
-    },
-    {
-      name: 'black jeans',
-      type: 'pants',
-      color: 'black'
-    },
-    {
-      name: 'white long sleeve',
-      type: 'shirt',
-      color: 'white'
-    },
-    {
-      name: 'green pants',
-      type: 'pants',
-      color: 'green'
-    }
-  ];
-
+function ItemList(props){
   return (
     <div>
       <h4>This is the ItemList</h4>
       <div>
         <hr/>
-        {masterItemList.map((item, index)=>
-          <Item name={item.name}
-            type={item.type}
-            color={item.color}
-            key={index}/>
-        )}
+        {Object.keys(props.itemList).map(function(itemId){
+          let item = props.itemList[itemId];
+          return <Item name={item.name}
+                  type={item.type}
+                  color={item.color}
+                  key={itemId}
+                  itemId={itemId} />;
+        })}
       </div>
     </div>
   );
 }
+
+ItemList.propTypes = {
+  itemList: PropTypes.object
+};
 
 export default ItemList;

@@ -1,21 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import constants from './../constants';
+const { c } = constants;
 
-function Item (props){
+function Item(props){
 
+const itemInformation =
+  <div>
+    <p>{props.name}</p>
+    <p>Color: {props.color} | Type: {props.type}</p>
+    <hr/>
+  </div>
   return (
     <div>
-      <p>{props.name}</p>
-      <p>Color: {props.color} | Type: {props.type}</p>
-      <hr/>
+      {itemInformation}
     </div>
   );
 }
 
 Item.propTypes = {
-  name: PropTypes.string,
+  name: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
-  type: PropTypes.string.isReqired
+  type: PropTypes.string.isRequired
 };
 
-export default Item;
+export default connect()(Item);

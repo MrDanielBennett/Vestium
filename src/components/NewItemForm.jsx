@@ -1,15 +1,19 @@
 import React from 'react'
+import {connect} from 'react-redux';
+import {v4} from 'uuid';
+import { addItem } from './../actions';
+import constants from './../constants';
+const { c } = constants;
 
-function NewItemForm(){
+function NewItemForm(props){
   let _name = null;
   let _type = null;
   let _color = null;
 
   function handleNewItemFormSubmission(event){
+    const { dispatch } = props;
     event.preventDefault();
-    console.log(_name.value);
-    console.log(_type.value);
-    console.log(_color.value);
+    dispatch(addItem(_name.value, _color.value, _type.value))
     _name.value = '';
   }
 
@@ -53,4 +57,4 @@ function NewItemForm(){
   );
 }
 
-export default NewItemForm;
+export default connect()(NewItemForm);
