@@ -2,8 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
+
 function Selected(props){
 
+  console.log("yes officer this prop right here " + props.selectedItem.type);
   return (
     <div>
       <h4>This is the Selected</h4>
@@ -16,7 +18,7 @@ function Selected(props){
     </div>
   );
 }
-Selected.propTypes ={
+Selected.propTypes = {
   selectedItem: PropTypes.object
 }
 export default Selected;

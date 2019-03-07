@@ -13,8 +13,10 @@ import { connect } from 'react-redux'
 class Closet extends React.Component{
   render(){
     let optionalSelectedItem = null;
+    let matchesForSelectedItem = null;
     if (this.props.selectedItem.length > 0){
       optionalSelectedItem =  <Selected selectedItem={this.props.itemList[this.props.selectedItem]}/>;
+      matchesForSelectedItem = <Matches selectedItem={this.props.itemList[this.props.selectedItem]}/>
     }
   return (
     <div className="test">
@@ -26,7 +28,7 @@ class Closet extends React.Component{
         </div>
         <div>
           {optionalSelectedItem}
-          <Matches/>
+          {matchesForSelectedItem}
         </div>
       </div>
     </div>
