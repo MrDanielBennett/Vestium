@@ -16,7 +16,8 @@ class Closet extends React.Component{
     let matchesForSelectedItem = null;
     if (this.props.selectedItem.length > 0){
       optionalSelectedItem =  <Selected selectedItem={this.props.itemList[this.props.selectedItem]}/>;
-      matchesForSelectedItem = <Matches selectedItem={this.props.itemList[this.props.selectedItem]}/>
+      matchesForSelectedItem = <Matches selectedItem={this.props.itemList[this.props.selectedItem]}
+      itemList ={this.props.itemList}/>
     }
   return (
     <div className="test">

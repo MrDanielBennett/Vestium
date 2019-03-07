@@ -5,7 +5,6 @@ import PropTypes from 'prop-types';
 
 function Selected(props){
 
-  console.log("yes officer this prop right here " + props.selectedItem.type);
   return (
     <div>
       <h4>This is the Selected</h4>
