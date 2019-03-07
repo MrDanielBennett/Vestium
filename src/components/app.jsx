@@ -24,7 +24,7 @@ render(){
       <Header/>
       <Switch>
         <Route exact path='/' render={()=><Closet itemList={this.props.itemList}/>} />
-        <Route path='/newItemForm' render={()=><NewItemForm/>} /> //this might cause issues
+        <Route path='/newItemForm' render={()=><NewItemForm/>} />
       </Switch>
     </div>
   );

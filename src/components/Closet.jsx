@@ -12,6 +12,10 @@ import { connect } from 'react-redux'
 
 class Closet extends React.Component{
   render(){
+    let optionalSelectedItem = null;
+    if (this.props.selectedItem.length > 0){
+      optionalSelectedItem =  <Selected selectedItem={this.props.itemList[this.props.selectedItem]}/>;
+    }
   return (
     <div className="test">
       <h3>This is the body</h3>
@@ -21,7 +25,7 @@ class Closet extends React.Component{
           <Link to="/newItemForm">add item</Link>
         </div>
         <div>
-          <Selected/>
+          {optionalSelectedItem}
           <Matches/>
         </div>
       </div>
@@ -31,11 +35,13 @@ class Closet extends React.Component{
 }
 
 Closet.propTypes = {
-    itemList: PropTypes.object
+    itemList: PropTypes.object,
+    selectedItem: PropTypes.object
   };
 
 const mapStateToProps = state => {
   return{
+    selectedItem: state.selectedItem,
     itemList: state.itemList
   };
 };

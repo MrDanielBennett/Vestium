@@ -6,6 +6,15 @@ const { c } = constants;
 
 function Item(props){
 
+  function handleSavingSelectedItem(itemId){
+    const { dispatch } = props;
+    const action = {
+      type: c.SELECT_ITEM,
+      itemId: itemId
+    };
+    dispatch(action);
+  }
+
 const itemInformation =
   <div>
     <p>{props.name}</p>
@@ -13,7 +22,7 @@ const itemInformation =
     <hr/>
   </div>
   return (
-    <div>
+    <div onClick={() => {handleSavingSelectedItem(props.itemId);}}>
       {itemInformation}
     </div>
   );
