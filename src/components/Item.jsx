@@ -31,7 +31,7 @@ const itemInformation =
 Item.propTypes = {
   name: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired
+  type: PropTypes.string.isRequired,
 };
 
 export default connect()(Item);

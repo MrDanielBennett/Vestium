@@ -18,7 +18,7 @@ function NewItemForm(props){
   }
 
   return(
-    <div>
+    <div className='addItemForm'>
       <form onSubmit={handleNewItemFormSubmission}>
         <input
           type='text'

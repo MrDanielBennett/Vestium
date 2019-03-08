@@ -25,6 +25,13 @@
   background-color: #ffc15e;
 }
 
+.addItemForm{
+  border: 2px solid #f7b058;
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffc15e;
+}
+
 body{
   background-color: #1f1300;
 }
