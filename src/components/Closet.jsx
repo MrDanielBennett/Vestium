@@ -21,9 +21,8 @@ class Closet extends React.Component{
     }
   return (
     <div className="test">
-      <h3>This is the body</h3>
       <div className='body-grid'>
-        <div>
+        <div className="itemList">
           <ItemList itemList={this.props.itemList}/>
           <Link to="/newItemForm">add item</Link>
         </div>

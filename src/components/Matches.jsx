@@ -3,14 +3,13 @@ import PropTypes from 'prop-types';
 import Item from './Item';
 
 function Matched(props){
-  console.log("My Guy... " + "yeah");
-  let match = null;
+  let match = '';
   if (props.selectedItem.color === 'red' && props.selectedItem.type === 'shirt'){
     match = ["black", "blue"]
   }
   return (
     <div>
-      <h4>This is the Matched</h4>
+      <h4>These items from your closet will match your {props.selectedItem.name}:</h4>
          {Object.keys(props.itemList).map(function(itemId){
            let item = props.itemList[itemId];
            if (match.includes(item.color)) {

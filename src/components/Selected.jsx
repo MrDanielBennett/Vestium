@@ -7,7 +7,6 @@ function Selected(props){
 
   return (
     <div>
-      <h4>This is the Selected</h4>
         <div>
        <hr/>
        <h1>{props.selectedItem.name}</h1>

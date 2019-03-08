@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 function ItemList(props){
   return (
     <div>
-      <h4>This is the ItemList</h4>
+      <h4>Your Closet: </h4>
       <div>
         <hr/>
         {Object.keys(props.itemList).map(function(itemId){
