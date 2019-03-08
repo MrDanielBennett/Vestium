@@ -1,17 +1,30 @@
 .test{
-  background-color: yellow;
-  width: 75%;
+  background-color: #f7934c;
   text-align: center;
-  display: inline-block;
+  width: 75%;
+  margin-left: 12%;
+  border: 2px solid #cc5803
 }
 
 .body-grid{
   display: grid;
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: 1fr 1fr;
 }
 
 .itemList{
-  border: 2px solid black;
+  border: 2px solid #f7b058;
   padding: 10px;
   margin: 10px;
+  background-color: #ffc15e;
+}
+
+.select-match{
+  border: 2px solid #f7b058;
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffc15e;
+}
+
+body{
+  background-color: #1f1300;
 }

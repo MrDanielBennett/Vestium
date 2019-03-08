@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Item from './Item';
 
 function Matched(props){
+  //LOGIC
   let match = '';
   if (props.selectedItem.color === 'red' && props.selectedItem.type === 'shirt'){
     match = ["black", "blue"]

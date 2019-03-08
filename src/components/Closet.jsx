@@ -26,7 +26,7 @@ class Closet extends React.Component{
           <ItemList itemList={this.props.itemList}/>
           <Link to="/newItemForm">add item</Link>
         </div>
-        <div>
+        <div className='select-match'>
           {optionalSelectedItem}
           {matchesForSelectedItem}
         </div>
