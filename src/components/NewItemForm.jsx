@@ -48,6 +48,8 @@ function NewItemForm(props){
             <option value="green">Green</option>
             <option value="grey">Grey</option>
             <option value="brown">Brown</option>
+            <option value="navy">Navy</option>
+            <option value="khaki">Khaki</option>
           </select>
         </label>
         <br/>
