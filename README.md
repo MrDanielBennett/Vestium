@@ -21,6 +21,20 @@ Grey // Pink?, Green, jean, black, red<br>
 Brown // Khaki, black, dark jean, blue
 
 
+Pants // Shirt
+
+Red // white, black, grey<br>
+Yellow // yellow, black<br>
+White // black, yellow, orange, green, blue, grey, red, brown<br>
+Black // black, orange, jean, green, grey, red, blue, yellow, white, brown<br>
+Blue // pink, black, white<br>
+Orange // blue, black, white<br>
+Green // grey, white, black<br>
+Grey //  green, black, white, pink, grey<br>
+Brown // blue, white, black, red<br>
+Khaki // red, white, black, pink, blue, purple, orange, green, grey, brown
+Navy // red, white, black, pink, purple, orange, green, grey, brown
+
 # Next Steps
 * set state
 * style page

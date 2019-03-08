@@ -39,6 +39,39 @@ function Matched(props){
   } else if (props.selectedItem.color === 'brown' && props.selectedItem.type === 'shirt'){
     match = ["khaki", "black", 'navy'],
     type = "pants"
+  } else if (props.selectedItem.color === 'red' && props.selectedItem.type === 'pants'){
+    match = ["white", "black", 'grey'],
+    type = "shirt"
+  } else if (props.selectedItem.color === 'yellow' && props.selectedItem.type === 'pants'){
+    match = ["yellow", "black",],
+    type = "shirt"
+  } else if (props.selectedItem.color === 'white' && props.selectedItem.type === 'pants'){
+    match = ["black", "yellow", 'orange', 'green', 'blue', 'grey', 'red', 'brown'],
+    type = "shirt"
+  } else if (props.selectedItem.color === 'black' && props.selectedItem.type === 'pants'){
+    match = ["black", "orange", 'blue', 'green', 'grey', 'red', 'blue', 'yellow', 'white', 'brown'],
+    type = "shirt"
+  } else if (props.selectedItem.color === 'blue' && props.selectedItem.type === 'pants'){
+    match = ["pink", "black", 'white'],
+    type = "shirt"
+  } else if (props.selectedItem.color === 'orange' && props.selectedItem.type === 'pants'){
+    match = ["blue", "black", 'white'],
+    type = "shirt"
+  } else if (props.selectedItem.color === 'green' && props.selectedItem.type === 'pants'){
+    match = ["grey", "white", 'black'],
+    type = "shirt"
+  } else if (props.selectedItem.color === 'grey' && props.selectedItem.type === 'pants'){
+    match = ["green", "black", 'white', 'grey', 'pink'],
+    type = "shirt"
+  } else if (props.selectedItem.color === 'brown' && props.selectedItem.type === 'pants'){
+    match = ["blue", "white", 'black', 'red'],
+    type = "shirt"
+  } else if (props.selectedItem.color === 'khaki' && props.selectedItem.type === 'pants'){
+    match = ["red", "white", 'black', 'pink', 'blue', 'purple', 'orange', 'green', 'grey', 'brown'],
+    type = "shirt"
+  } else if (props.selectedItem.color === 'navy' && props.selectedItem.type === 'pants'){
+    match = ["red", "white", 'black', 'pink', 'purple', 'orange', 'green', 'grey', 'brown'],
+    type = "shirt"
   }
   return (
     <div>
