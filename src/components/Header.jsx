@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 function Header (){
 
   return (
-    <div>
-      <Link to="/"><h1>VESTIUM</h1></Link>
+    <div className="header">
+      <Link className="basic-text" to="/"><h1>VESTIUM</h1></Link>
     </div>
   );
 }

@@ -5,33 +5,30 @@
   margin-left: 12%;
   border: 2px solid #cc5803
 }
-
 .body-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
-
 .itemList{
   border: 2px solid #f7b058;
   padding: 10px;
   margin: 10px;
   background-color: #ffc15e;
 }
-
 .select-match{
   border: 2px solid #f7b058;
   padding: 10px;
   margin: 10px;
   background-color: #ffc15e;
 }
-
 .addItemForm{
   border: 2px solid #f7b058;
   padding: 10px;
   margin: 10px;
   background-color: #ffc15e;
+  width: 26%;
+  margin-left: 36%;
 }
-
 .closet-container{
   height: 600px;
 }
@@ -49,6 +46,27 @@
   height: 430px;
   overflow: auto;
 }
+.header{
+  text-align: center;
+  text-decoration: none;
+}
+.basic-text{
+  text-decoration: none;
+  color: #ffc15e;
+  text-shadow: 2px 2px rgb(255, 255, 255, .6);
+  font-size: 26pt;
+}
+.basic-text:hover{
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 2px 2px rgb(255, 255, 255, .6);
+  font-size: 26pt;
+}
+h1{
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
 body{
   background-color: #1f1300;
+  margin-top: 4px;
 }
