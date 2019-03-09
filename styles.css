@@ -32,6 +32,16 @@
   background-color: #ffc15e;
 }
 
+.closet-container{
+  height: 600px;
+}
+.closet-content{
+  height: 590px;
+  overflow: auto;
+}
+.newItemButton{
+  margin-top: 40px;
+}
 body{
   background-color: #1f1300;
 }

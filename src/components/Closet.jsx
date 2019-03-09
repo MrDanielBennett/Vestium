@@ -24,7 +24,9 @@ class Closet extends React.Component{
       <div className='body-grid'>
         <div className="itemList">
           <ItemList itemList={this.props.itemList}/>
-          <Link to="/newItemForm">add item</Link>
+          <div className='newItemButton'>
+            <button><Link to="/newItemForm">add item</Link></button>
+          </div>
         </div>
         <div className='select-match'>
           {optionalSelectedItem}

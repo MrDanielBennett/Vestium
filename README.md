@@ -35,10 +35,15 @@ Brown // blue, white, black, red<br>
 Khaki // red, white, black, pink, blue, purple, orange, green, grey, brown
 Navy // red, white, black, pink, purple, orange, green, grey, brown
 
+
+## Component Tree
+!["component tree"](assets/component-tree-v3.jpg)
+State lives in App.jsx and Closer.jsx where it is then passed to itemlist/matched/selected. State is lifted from both selected and newItemForm.
+
+## Layout/Logo Ideas
+![](assets/Vestium-Layout.jpg)
+![](assets/Vestium-Logo-Idea.jpg)
+
 # Next Steps
-* set state
 * style page
-* have form update list
-* build actual logic out
-* start redux refactor
-* refactor components
+* look at stretch goals
