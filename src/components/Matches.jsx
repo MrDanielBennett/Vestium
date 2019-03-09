@@ -74,8 +74,9 @@ function Matched(props){
     type = "shirt"
   }
   return (
-    <div>
+    <div className="match-container">
       <h4>These items from your closet will match your {props.selectedItem.name}:</h4>
+      <div className='match-content'>
          {Object.keys(props.itemList).map(function(itemId){
            let item = props.itemList[itemId];
            if (match.includes(item.color) && type === item.type){
@@ -87,6 +88,7 @@ function Matched(props){
                    itemId={itemId} />;
                }
          })}
+       </div>
     </div>
   );
 }

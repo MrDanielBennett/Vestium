@@ -42,6 +42,13 @@
 .newItemButton{
   margin-top: 40px;
 }
+.match-container{
+  height: 460px;
+}
+.match-content{
+  height: 430px;
+  overflow: auto;
+}
 body{
   background-color: #1f1300;
 }
