@@ -84,6 +84,7 @@ function Matched(props){
            return <Item name={item.name}
                    type={item.type}
                    color={item.color}
+                   image={item.image}
                    key={itemId}
                    itemId={itemId} />;
                }
