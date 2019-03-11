@@ -10,11 +10,41 @@ function NewItemForm(props){
   let _type = null;
   let _color = null;
 
+  function previewFile() {
+    var preview = document.querySelector('img');
+    let image = document.querySelector('input[type=file]').files[0];
+    var reader  = new FileReader();
+
+    reader.addEventListener("load", function () {
+      preview.src = reader.result;
+    }, false);
+
+    if (file) {
+      reader.readAsDataURL(file);
+  }
+  return
+}
+
+
   function handleNewItemFormSubmission(event){
-    const { dispatch } = props;
-    event.preventDefault();
-    dispatch(addItem(_name.value, _color.value, _type.value))
-    _name.value = '';
+    let _image = document.querySelector('img');
+    let file = document.querySelector('input[type=file]').files[0];
+    let reader  = new FileReader();
+    let test = ''
+
+    reader.addEventListener("load", function () {
+      _image.src = reader.result;
+      const { dispatch } = props;
+      event.preventDefault();
+      dispatch(addItem(_name.value, _color.value, _type.value, _image.src))
+      _name.value = '';
+
+    }, false);
+
+    if (file) {
+      reader.readAsDataURL(file);
+  }
+
   }
 
   return(
@@ -53,8 +83,14 @@ function NewItemForm(props){
           </select>
         </label>
         <br/>
+        <input
+          type='file'
+          id='image'/>
         <button type='submit'>Add Item</button>
       </form>
+
+      <img src="" height="200" alt="Image preview..."/>
+
     </div>
   );
 }

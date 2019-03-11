@@ -6,11 +6,12 @@ import Moment from 'Moment';
 Firebase.initializeApp(firebaseConfig);
 const items = Firebase.database().ref('items');
 
-export function addItem(_name, _color, _type){
+export function addItem(_name, _color, _type, _image){
   return () => items.push({
     name: _name,
     color: _color,
     type: _type,
+    image: _image,
   });
 }
 

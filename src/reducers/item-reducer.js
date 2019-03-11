@@ -3,7 +3,7 @@ const { c } = constants;
 
 export default(state={}, action) =>{
   let newState;
-  const {name, color, type, id } = action;
+  const {name, color, type, image, id } = action;
 
   switch(action.type){
     case c.ADD_ITEM:
@@ -12,6 +12,7 @@ export default(state={}, action) =>{
           name: name,
           color: color,
           type: type,
+          image: image,
           id: id
         }
       });

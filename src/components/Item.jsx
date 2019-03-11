@@ -19,6 +19,7 @@ const itemInformation =
   <div>
     <p>{props.name}</p>
     <p>Color: {props.color} | Type: {props.type}</p>
+    <img src={props.image} />
     <hr/>
   </div>
   return (
@@ -32,6 +33,7 @@ Item.propTypes = {
   name: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   type: PropTypes.string.isRequired,
+  image: PropTypes.string,
 };
 
 export default connect()(Item);
