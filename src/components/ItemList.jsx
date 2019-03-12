@@ -10,9 +10,8 @@ function ItemList(props){
 
   return (
     <div className="closet-container">
-      <h4>Your Closet: </h4>
+      <h1>Your Closet: </h1>
       <div className="closet-content">
-        <hr/>
         {Object.keys(props.itemList).map(function(itemId){
           let item = props.itemList[itemId];
           return <Item name={item.name}

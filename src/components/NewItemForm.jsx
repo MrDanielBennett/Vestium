@@ -50,14 +50,14 @@ function NewItemForm(props){
   return(
     <div className='addItemForm'>
       <form onSubmit={handleNewItemFormSubmission}>
-        <input
+        <input className="text-input"
           type='text'
           id='name'
           placeholder='Name of Clothing Item'
           ref={(input) => {_name = input;}} />
         <br/>
         <label>
-          What type of Clothing is the item?
+          <h4>What type of Clothing is the item?</h4>
         <select ref={(input) => {_type = input}}>
             <option value="shirt">Shirt</option>
             <option value="pants">Pants</option>
@@ -65,7 +65,7 @@ function NewItemForm(props){
         </label>
         <br/>
         <label>
-          What Color is the item?
+          <h4>What Color is the item?</h4>
         <select ref={(input) => {_color = input}}>
             <option value="red">Red</option>
             <option value="yellow">Yellow</option>
@@ -86,10 +86,12 @@ function NewItemForm(props){
         <input
           type='file'
           id='image'/>
+        <br/>
+        <img src="" height="200" alt=""/>
+        <br/>
         <button type='submit'>Add Item</button>
       </form>
 
-      <img src="" height="200" alt="Image preview..."/>
 
     </div>
   );

@@ -47,3 +47,5 @@ State lives in App.jsx and Closer.jsx where it is then passed to itemlist/matche
 # Next Steps
 * style page
 * look at stretch goals
+
+* image react bootstrap carousel

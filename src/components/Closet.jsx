@@ -29,8 +29,12 @@ class Closet extends React.Component{
           </div>
         </div>
         <div className='select-match'>
+          <div className='selected-section'>
           {optionalSelectedItem}
+        </div>
+        <div className='matches-section'>
           {matchesForSelectedItem}
+        </div>
         </div>
       </div>
     </div>
@@ -40,7 +44,7 @@ class Closet extends React.Component{
 
 Closet.propTypes = {
     itemList: PropTypes.object,
-    selectedItem: PropTypes.object
+    selectedItem: PropTypes.string
   };
 
 const mapStateToProps = state => {

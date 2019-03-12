@@ -1,28 +1,40 @@
 .test{
-  background-color: #f7934c;
   text-align: center;
   width: 75%;
   margin-left: 12%;
-  border: 2px solid #cc5803
 }
 .body-grid{
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .itemList{
-  border: 2px solid #f7b058;
-  padding: 10px;
+  border: 5px solid #f7b058;
+  padding: 5px;
   margin: 10px;
   background-color: #ffc15e;
+  border-radius: 10px;
 }
 .select-match{
-  border: 2px solid #f7b058;
   padding: 10px;
   margin: 10px;
-  background-color: #ffc15e;
 }
+.selected-section{
+  border: 5px solid #f7b058;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #ffc15e;
+  border-radius: 10px;
+}
+.matches-section{
+  border: 5px solid #f7b058;
+  padding: 10px;
+  background-color: #ffc15e;
+  border-radius: 10px;
+}
+
 .addItemForm{
-  border: 2px solid #f7b058;
+  border: 5px solid #f7b058;
+  border-radius: 10px;
   padding: 10px;
   margin: 10px;
   background-color: #ffc15e;
@@ -40,10 +52,10 @@
   margin-top: 40px;
 }
 .match-container{
-  height: 460px;
+  height: 360px;
 }
 .match-content{
-  height: 430px;
+  height: 300px;
   overflow: auto;
 }
 .header{
@@ -53,7 +65,7 @@
 .basic-text{
   text-decoration: none;
   color: #ffc15e;
-  text-shadow: 2px 2px rgb(255, 255, 255, .6);
+  text-shadow: 2px 2px rgb(0, 0, 0, .6);
   font-size: 26pt;
 }
 .basic-text:hover{
@@ -62,15 +74,51 @@
   text-shadow: 2px 2px rgb(255, 255, 255, .6);
   font-size: 26pt;
 }
+
 h1{
   margin-top: 2px;
   margin-bottom: 2px;
 }
+h4{
+  margin-bottom: 1px;
+  margin-top: 3px;
+}
+.item p{
+  margin-top: 2px;
+}
+.item{
+  border-bottom: 3px solid #f7b058;
+
+}
 body{
-  background-color: #1f1300;
+  background-color: lightblue;
   margin-top: 4px;
 }
 img{
+  border-radius: 5px;
   height: 100px;
   width: 100px;
+}
+.img-special{
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+  border: 3px solid white;
+}
+img:hover{
+  border-radius: 5px;
+  height: 200px;
+  width: 200px;
+  transition: 1s;
+  border: 3px solid white;
+}
+.text-input{
+  width: 100%;
+  height: 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  border: 2px darkgrey solid;
+}
+select{
+  margin-bottom: 5px;
 }

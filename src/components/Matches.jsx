@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Item from './Item';
+import MatchedItem from './MatchedItem';
 
 function Matched(props){
   //LOGIC
@@ -81,9 +82,7 @@ function Matched(props){
            let item = props.itemList[itemId];
            if (match.includes(item.color) && type === item.type){
 
-           return <Item name={item.name}
-                   type={item.type}
-                   color={item.color}
+           return <MatchedItem name={item.name}
                    image={item.image}
                    key={itemId}
                    itemId={itemId} />;

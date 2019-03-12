@@ -16,11 +16,10 @@ function Item(props){
   }
 
 const itemInformation =
-  <div>
-    <p>{props.name}</p>
+  <div className="item">
+    <h4>{props.name}</h4>
     <p>Color: {props.color} | Type: {props.type}</p>
     <img src={props.image} />
-    <hr/>
   </div>
   return (
     <div onClick={() => {handleSavingSelectedItem(props.itemId);}}>
