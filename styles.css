@@ -98,6 +98,7 @@ img{
   border-radius: 5px;
   height: 100px;
   width: 100px;
+  transition: 1s;
 }
 .img-special{
   border-radius: 5px;
@@ -121,4 +122,60 @@ img:hover{
 }
 select{
   margin-bottom: 5px;
+}
+
+
+
+
+
+.background-path{
+  margin-top: -100px;
+  width: 100vw;
+  height: 100px;
+}
+
+@keyframes float {
+  from {left: -40%;}
+  to {left: 115%;}
+}
+
+.shirt-float{
+  position: relative;
+  top: -70%;
+  left: -15%;
+  animation-name: float;
+  animation-duration: 40s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.shirtpic {
+  position: absolute;
+  transform: translate(-50%, -70%);
+  z-index: -1;
+}
+.shirtpic2 {
+  position: absolute;
+  transform: translate(250%, 50%);
+  z-index: -1;
+}
+.shirtpic3 {
+  position: absolute;
+  transform: translate(450%, -200%);
+  z-index: -1;
+}
+.shirtpic4 {
+  position: absolute;
+  transform: translate(-400%, -400%);
+  z-index: -1;
+}
+.shirtpic5 {
+  position: absolute;
+  transform: translate(20%, -250%);
+  z-index: -1;
+}
+.shirtpic6 {
+  position: absolute;
+  transform: translate(20%, -600%);
+  z-index: -1;
 }

@@ -87,11 +87,10 @@ function NewItemForm(props){
           type='file'
           id='image'/>
         <br/>
-        <img src="" height="200" alt=""/>
-        <br/>
         <button type='submit'>Add Item</button>
       </form>
 
+      <img src="" height="200" alt=""/>
 
     </div>
   );

@@ -6,7 +6,6 @@ const { c } = constants;
 
 function MatchedItem(props){
 
-
 const itemInformation =
   <div className="item">
     <h4>{props.name}</h4>

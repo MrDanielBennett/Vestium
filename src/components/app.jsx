@@ -9,6 +9,7 @@ import Closet from './Closet';
 import Header from './Header';
 import NewItemForm from './NewItemForm';
 import * as actions from './../actions';
+import shirtpic from './../../assets/t-shirt-icon.png';
 
 class App extends React.Component{
 
@@ -21,12 +22,24 @@ componentWillMount(){
 render(){
   return (
     <div>
+    <div>
       <Header/>
       <Switch>
         <Route exact path='/' render={()=><Closet itemList={this.props.itemList}/>} />
         <Route path='/newItemForm' render={()=><NewItemForm/>} />
       </Switch>
     </div>
+      <div className="background-path">
+        <div className="shirt-float">
+          <img className='shirtpic' src={shirtpic}></img>
+          <img className='shirtpic2' src={shirtpic}></img>
+          <img className='shirtpic3' src={shirtpic}></img>
+          <img className='shirtpic4' src={shirtpic}></img>
+          <img className='shirtpic5' src={shirtpic}></img>
+          <img className='shirtpic6' src={shirtpic}></img>
+        </div>
+      </div>
+  </div>
   );
 }
 }
