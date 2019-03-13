@@ -35,7 +35,7 @@ function Matched(props){
     match = ["khaki", "black", "navy", 'grey'],
     type = "pants"
   } else if (props.selectedItem.color === 'grey' && props.selectedItem.type === 'shirt'){
-    match = ["green", "navy", "black", "red"],
+    match = ["green", "navy", "black", "red", 'khaki'],
     type = "pants"
   } else if (props.selectedItem.color === 'brown' && props.selectedItem.type === 'shirt'){
     match = ["khaki", "black", 'navy'],
