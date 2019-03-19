@@ -7,7 +7,8 @@
     "lint": "eslint src/** src/**/**; exit 0",
     "lint-fix": "eslint src/** src/**/** --fix; exit 0",
     "test": "jest; exit 0",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "build": "webpack"
   },
   "author": "Daniel Bennett",
   "license": "ISC",

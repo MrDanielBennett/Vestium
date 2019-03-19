@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "vestium": "vestium-app",
+    "default": "vestium-app"
+  }
+}
